@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Add Book Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Add book</h1>
+        <p>Please Add book details below:</p>
+        <form action="AddBookServlet.do" method="POST">
+            <table>
+                <tr>
+                    <td>Title</td>
+                    <td><input type="text" name="title" required=""/></td>
+                </tr>
+                <tr>
+                    <td>Price</td>
+                    <td><input type="text" name="price" required=""/></td>
+                </tr>
+                <tr>
+                    <td>Description</td>
+                    <td><input type="text" name="description" required=""/></td>
+                </tr>
+                <tr>
+                    <td>ISBN</td>
+                    <td><input type="text" name="isbn" required=""/></td>
+                </tr>
+                <tr>
+                    <td>Number of pages</td>
+                    <td><input type="text" name="pages" required=""/></td>
+                </tr>
+                <tr>
+                    <td>Has illustrations?</td>
+                    <td>
+                        <select name="illustration">
+                            <option value="true">Yes</option>
+                            <option value="false">No</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="SUBMIT"/></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
